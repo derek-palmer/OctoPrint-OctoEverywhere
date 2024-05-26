@@ -20,7 +20,7 @@ These three values must be set at environment vars when you first run the contai
 
 ## Required Persistent Storage
 
-You must map the `/data` folder in your docker container to a directory on your computer so the plugin can write data that will remain between runs. Failure to do this will require relinking the plugin when the container is destroyed or updated.
+Your data directory will live in this repository, but don't worry, the data isn't tracked by git, its just an easy way to keep the configs consistent and not having a need to specify a custom path on your machine.
 
 ## Linking Your Bambu Connect Plugin
 

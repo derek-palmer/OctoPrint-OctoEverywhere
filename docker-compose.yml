@@ -3,25 +3,25 @@ services:
     image: octoeverywhere/octoeverywhere:latest
     environment:
         # https://octoeverywhere.com/s/access-code
-      - ACCESS_CODE=XXXXXXXX
+      - ACCESS_CODE
         # https://octoeverywhere.com/s/bambu-sn
-      - SERIAL_NUMBER=XXXXXXXXXXXXXXX
+      - SERIAL_NUMBER
         # Find using the printer's display
-      - PRINTER_IP=192.168.1.1
+      - PRINTER_IP
     volumes:
       # Specify a path mapping for the required persistent storage
-      - :/data
+      - /data:/data
 
   # Add as many printers as you want!
   # octoeverywhere-bambu-connect-2:
   #   image: octoeverywhere/octoeverywhere:latest
   #   environment:
   #       # https://octoeverywhere.com/s/access-code
-  #     - ACCESS_CODE=XXXXXXXX
+  #     - ACCESS_CODE2
   #       # https://octoeverywhere.com/s/bambu-sn
-  #     - SERIAL_NUMBER=XXXXXXXXXXXXXXX
+  #     - SERIAL_NUMBER2
   #       # Find using the printer's display
-  #     - PRINTER_IP=192.168.1.2
+  #     - PRINTER_IP2
   #   volumes:
   #     # Specify a path mapping for the required persistent storage
-  #     - /some/path/on/your/computer/printer2:/data
+  #     - /data2:/data
