@@ -1,4 +1,3 @@
-version: '2'
 services:
   octoeverywhere-bambu-connect:
     image: octoeverywhere/octoeverywhere:latest
@@ -11,7 +10,7 @@ services:
       - PRINTER_IP=192.168.1.1
     volumes:
       # Specify a path mapping for the required persistent storage
-      - /some/path/on/your/computer:/data
+      - :/data
 
   # Add as many printers as you want!
   # octoeverywhere-bambu-connect-2:
