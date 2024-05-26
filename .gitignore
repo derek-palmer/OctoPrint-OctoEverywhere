@@ -11,3 +11,4 @@ py2venv/*
 py3venv/*
 .env
 data/*
+.vscode/*
